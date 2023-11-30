@@ -5,6 +5,9 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>SRYBAK</Title>
+        <Authors>Semen Rybak</Authors>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,6 +16,11 @@
 
     <ItemGroup>
       <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="vargant\macos\" />
+      <Folder Include="vargant\windows\" />
     </ItemGroup>
 
 </Project>
