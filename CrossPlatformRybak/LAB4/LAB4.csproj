@@ -8,19 +8,18 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>SRYBAK</Title>
         <Authors>Semen Rybak</Authors>
+        <Version>1.0.3</Version>
+        <PackAsTool>true</PackAsTool>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+        <ToolCommandName>SRYBAK</ToolCommandName>
     </PropertyGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\LAB4_LIB\LAB4_LIB.csproj" />
-    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="vargant\macos\" />
-      <Folder Include="vargant\windows\" />
+      <ProjectReference Include="..\LAB4_LIB\LAB4_LIB.csproj" />
     </ItemGroup>
 
 </Project>

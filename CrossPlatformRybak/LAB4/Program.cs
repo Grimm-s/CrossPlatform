@@ -49,9 +49,20 @@ namespace Lab4
                 return;
             }
 
-            if (LabName == "lab1")
+            var inputPath = Helpers.ResolvePath(InputPath, "input.txt");
+            var outputPath = Helpers.ResolvePath(InputPath, "output.txt");
+
+            switch (LabName)
             {
-                Lab1.Run(Helpers.ResolvePath(InputPath, "input.txt"), Helpers.ResolvePath(OutputPath, "output.txt"));
+                case "lab1":
+                    Lab1.Run(inputPath, outputPath);
+                    break;
+                case "lab2":
+                    Lab2.Run(inputPath, outputPath);
+                    break;
+                case "lab3":
+                    Lab3.Run(inputPath, outputPath);
+                    break;
             }
         }
     }
