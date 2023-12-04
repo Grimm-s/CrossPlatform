@@ -1,0 +1,21 @@
+@model LAB5.ViewModels.LabResultViewModal;
+@{
+    ViewData["Title"] = "Lab 2 Rybak";
+}
+
+<h1>Lab 2 Rybak</h1>
+
+
+
+<form method="post" class="d-flex flex-column gap-2 align-items-start">
+    <label for="textarea">Enter input:</label>
+    <textarea cols="50" rows="10" name="data" id="textarea"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+
+@if(Model != null && Model.Result != null)
+{
+    <h2>Response: </h2>
+    <p>@Model.Result</p>
+}
